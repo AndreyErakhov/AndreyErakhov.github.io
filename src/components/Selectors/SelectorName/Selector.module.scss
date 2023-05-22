@@ -1,14 +1,14 @@
-.selector_name__content{
-    background: var(#{--background-default});
-    border: var(#{--border-background-default});
-    border-radius: 8px;
-    height: 45px;
-    width: 100%;
-    color: var(#{--text-color-default});
-    padding-left: 15px;
-    padding-right: 10px;
-    outline:none;
-    &:focus{
-        border: var(#{--focus-color-default});
-    }
+.selector_name__content {
+  background: var(#{--background-default});
+  border: var(#{--border-background-default});
+  border-radius: 8px;
+  height: 45px;
+  width: 100%;
+  color: var(#{--text-color-default});
+  padding-left: 15px;
+  padding-right: 10px;
+  outline: none;
+  &:focus {
+    border: var(#{--focus-color-default});
+  }
 }

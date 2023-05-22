@@ -1,126 +1,123 @@
-@import '../../assets/styles/mexins.scss' ;
+@import '../../assets/styles/mexins.scss';
 
-
-.selectors-content__select{
-    position: relative;
-    .selectors-content__select-close{
-        position: absolute;
-        z-index: 1;
-        background-color: transparent;
-        height: fit-content;
-        top: 43%;
-        right: calc(35px + 5 * (100vw / 1366));;
-    }
+.selectors-content__select {
+  position: relative;
+  .selectors-content__select-close {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    height: fit-content;
+    top: 43%;
+    right: calc(35px + 5 * (100vw / 1366));
+  }
 }
 
-.css-b62m3t-container{
-    height: fit-content !important;
+.css-b62m3t-container {
+  height: fit-content !important;
 }
 
 .custom-select {
-    &__placeholder {
-        color: var(#{--text-color-default}) !important;
-        padding-left: 15px !important;
-        margin-left: 0 !important;
-    }
+  &__placeholder {
+    color: var(#{--text-color-default}) !important;
+    padding-left: 15px !important;
+    margin-left: 0 !important;
+  }
 
-    &__control {
-        border: var(#{--border-background-default}) !important;
-        box-shadow: none !important;
-        background-color: var(#{--background-default}) !important;
-        border-radius: 8px !important;
-        height: 45px !important;
-        cursor: pointer !important;
-        
-        &--menu-is-open{
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
-            border-bottom-left-radius: 0 !important;
-            border-bottom-right-radius: 0 !important;
-            border-top: var(#{--focus-border-background-default})!important;   
-            border-left: var(#{--focus-border-background-default}) !important;  
-            border-right: var(#{--focus-border-background-default}) !important;  
-        }
-    }
-    &__value-container{
-        padding: 0 !important;
-    }
-    &__single-value{
-        color: var(#{--text-color-default}) !important;
-        padding: 0 15px 0 15px;
-    }
+  &__control {
+    border: var(#{--border-background-default}) !important;
+    box-shadow: none !important;
+    background-color: var(#{--background-default}) !important;
+    border-radius: 8px !important;
+    height: 45px !important;
+    cursor: pointer !important;
 
-    &__indicator-separator {
-        display: none;
+    &--menu-is-open {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      border-top: var(#{--focus-border-background-default}) !important;
+      border-left: var(#{--focus-border-background-default}) !important;
+      border-right: var(#{--focus-border-background-default}) !important;
     }
-    
-    &__indicators {
-        background: var(#{--img-url-selector-default}) no-repeat;
-    }
+  }
+  &__value-container {
+    padding: 0 !important;
+  }
+  &__single-value {
+    color: var(#{--text-color-default}) !important;
+    padding: 0 15px 0 15px;
+  }
 
-    &__indicator svg {
-        display: none;
-    }
+  &__indicator-separator {
+    display: none;
+  }
 
-    &__indicators {
-        margin: 20px 13px 0 10px;
-        height: fit-content;
+  &__indicators {
+    background: var(#{--img-url-selector-default}) no-repeat;
+  }
 
+  &__indicator svg {
+    display: none;
+  }
+
+  &__indicators {
+    margin: 20px 13px 0 10px;
+    height: fit-content;
+  }
+  &__menu {
+    border: var(#{--focus-border-background-default}) !important;
+    background-color: var(#{--background-default}) !important;
+    margin-top: 0px !important;
+    border-top: 0px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    z-index: 2 !important;
+  }
+  &__option {
+    position: relative;
+    z-index: 3;
+    cursor: pointer !important;
+    color: var(#{--text-color-default}) !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    &--is-focused {
+      background-color: var(#{--focus-background-default}) !important;
+      color: var(#{--focus-text-color-default}) !important;
     }
-    &__menu {
-        border: var(#{--focus-border-background-default}) !important;   
-        background-color: var(#{--background-default}) !important;
-        margin-top: 0px !important;
-        border-top: 0px !important;
-        border-top-left-radius: 0 !important;
-        border-top-right-radius: 0 !important;
-        border-bottom-left-radius: 8px !important;
-        border-bottom-right-radius: 8px !important;
-        z-index: 2 !important;
-        
+    &--is-selected {
+      background-color: var(#{--focus-background-default}) !important;
+      color: var(#{--focus-text-color-default}) !important;
     }
-    &__option {
-        position: relative;
-        z-index: 3;
-        cursor: pointer !important;
-        color: var(#{--text-color-default}) !important;
-        font-weight: 500 !important;
-        font-size: 16px !important;
-        line-height: 20px !important;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        &--is-focused {
-            background-color: var(#{--focus-background-default})!important;
-            color: var(#{--focus-text-color-default}) !important;
-        }
-        &--is-selected {
-            background-color: var(#{--focus-background-default}) !important;
-            color: var(#{--focus-text-color-default}) !important;
-        }
-    }
+  }
 }
 
-.selectors-content{
-    @include sm {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin: 35px 0 45px;
-    }
-    @include m {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin: 35px 0 45px;
-    }
-    @include s {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin: 35px 0 45px;
-    }
+.selectors-content {
+  @include sm {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
     margin: 35px 0 45px;
+  }
+  @include m {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 35px 0 45px;
+  }
+  @include s {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 35px 0 45px;
+  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 35px 0 45px;
 }

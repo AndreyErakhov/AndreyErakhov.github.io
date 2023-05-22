@@ -1,4 +1,4 @@
-import './../assets/styles/reset.scss'
+import '../assets/styles/reset.module.scss'
 import Header from '../components/Header/Header';
 import Selectors from '../components/Selectors/Selectors';
 import Gallery from '../components/Gallery/Gallery';

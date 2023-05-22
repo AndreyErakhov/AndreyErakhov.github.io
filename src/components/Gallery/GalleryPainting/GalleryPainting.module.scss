@@ -1,0 +1,171 @@
+@import './../../../assets/styles/mexins.scss' ;
+
+.gallery_content{
+    @include md {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    @include s {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    @include m {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 20px;
+    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.gallery_content__img_two {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+.gallery_content__img_one {
+    display: grid;  
+}
+
+.gallery_content__image_text__block {
+    display: none;
+
+}
+
+.gallery_content__image:hover {
+    .gallery_content__image_text__block {
+        width: 100%;
+        display: block;
+        margin: 5px 0 44px 15px;
+        @include m {
+            width: 100%;
+            display: block;
+            margin: 5px 0 11px 15px;
+        }
+        @include sm {
+            width: 100%;
+            display: block;
+            margin: 5px 0 11px 15px;
+        }
+        @include s {
+            width: 100%;
+            display: block;
+            margin: 5px 0 11px 15px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            font-size: calc(10px + 5 * (100vw / 1366));
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            span{
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                font-size: calc(7px + 5 * (100vw / 1366));
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.gallery_content__image  {
+    animation: ani 2.5s forwards;
+    position: relative;
+    background-color: #6a906b;
+    border-radius: 20px;
+    img{
+        @include md {
+            width: 100%;
+            height: 282px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        @include m {
+            width: 100%;
+            height: 235px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        @include sm {
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        @include s {
+            width: 100%;
+            height: 205px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .gallery_content__image_text {
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.75);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        h1{
+            margin: 5px 0 5px 15px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: calc(13px + 5 * (100vw / 1366));
+            line-height: 20px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            @include xl {
+                margin: 5px 0 5px 15px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: calc(10px + 5 * (100vw / 1366));
+                line-height: 20px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            @include md {
+                margin: 5px 0 5px 15px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: calc(12px + 5 * (100vw / 1366));
+                line-height: 20px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            @include s {
+                margin: 5px 0 5px 15px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: calc(11px + 5 * (100vw / 1366));
+                line-height: 20px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }

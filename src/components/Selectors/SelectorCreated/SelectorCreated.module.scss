@@ -1,0 +1,102 @@
+@import '../../../assets/styles/mexins.scss' ;
+
+.isActive{
+    display: none;
+ }
+.isActive_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    background: var(#{--background-default});
+    border: var(#{--border-background-default});
+    border-radius: 8px;
+    cursor: pointer;    
+
+    p {
+        color: var(#{--text-color-default});
+        margin-left: 15px;
+    }
+    img {
+        margin: 0 19px 0 10px;
+    }
+}
+.selector_created__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    background: var(#{--background-default});
+    border: var(#{--focus-border-background-default});
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;    
+
+    p {
+        color: var(#{--text-color-default});
+        margin-left: 15px;
+    }
+    img {
+        margin: 0 19px 0 10px;
+    }
+}
+.selector_created__input{
+    position: relative;
+}
+.selector_created__filter{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background: var(#{--background-default});
+    border: var(#{--focus-border-background-default});
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    @include xl {
+        padding: 0 54px;
+        flex-direction: column;
+    }
+    @include md {
+        padding: 0 24px;
+        flex-direction: column;
+    }
+    @include m {
+        flex-direction: row;
+    }
+    @include sm {
+        flex-direction: row;
+    }
+    @include s {
+        padding: 0 17px;
+        flex-direction: row;
+    }
+    div{
+        width: 12px;
+        height: 1px;
+        background-color: var(#{--focus-background-default});
+        margin: 0 10px;
+    }
+
+    input{
+        border: none;
+        background: #EFEFEF;
+        outline: none;
+        height: 43px;
+        width: 100%;
+        border-radius: 8px;
+        margin: 20px 0;
+        padding: 0 15px;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

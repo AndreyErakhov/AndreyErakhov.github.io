@@ -1,0 +1,77 @@
+@import '../../../../assets/styles/mexins.scss' ;
+
+%galleryBtn{
+    border: var(#{--focus-border-background-default});
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 14px;
+    @include s {
+        font-size: 8px;
+    }
+}
+
+.gallery_pagination__content_btn__doble_page{
+    background-color: var(#{--background-default});
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(#{--text-color-default});
+    @extend %galleryBtn ;
+    &:hover{
+        background-color: var(#{--hover-text-color-default});
+    }
+}
+
+.gallery_pagination__content_btn__img__disabled{
+    border: var(#{--disabled-border-background-default}) ;
+    background-color: var(#{--background-default})!important;
+        &:last-child{
+            border-right: var(#{--disabled-border-background-default}) !important;
+        }
+    img{
+        opacity: 0.3;
+    }
+}
+
+.gallery_pagination__content_btn{
+    background: var(#{--background-default});
+    color: var(#{--text-color-default}) ;
+    @extend %galleryBtn ;
+    &:hover{
+        background-color: var(#{--hover-text-color-default}) !important;
+    }
+
+    &__fz{
+        background: var(#{--background-default});
+        color: var(#{--text-color-default});
+        @extend %galleryBtn ;
+        &:hover{
+            background-color: var(#{--hover-text-color-default}) !important;
+        }
+        @include s {
+            border: var(#{--focus-border-background-default});
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            line-height: 20px;
+            padding: 10px 14px;
+            background: var(#{--background-default});
+            color: var(#{--text-color-default});
+        }
+    }
+    &__active{
+        color: var(#{--focus-text-color-default});
+        background-color: var(#{--focus-background-default});
+        @extend %galleryBtn ;
+    }
+    &__img{
+        background-color: var(#{--background-default});
+        color: var(#{--text-color-default});
+        @extend %galleryBtn ;
+        &:hover{
+            background-color: var(#{--hover-text-color-default}) ;
+        }
+    }
+
+}

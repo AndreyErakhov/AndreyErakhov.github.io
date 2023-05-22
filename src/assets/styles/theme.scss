@@ -1,0 +1,82 @@
+$body-background-dark: #000000 ;
+$body-background-light: #ffffff ;
+
+
+$border-background-dark: 1px solid #ffffff ;
+$border-background-light: 1px solid rgba(0, 0, 0, 0.3) ;
+
+$focus-border-background-dark: 1px solid #ffffff ;
+$focus-border-background-light: 1px solid #000000 ;
+
+$disabled-border-background-dark: 1px solid rgba(255, 255, 255, 0.3) ;
+$disabled-border-background-light: 1px solid rgba(0, 0, 0, 0.3);
+
+$background-dark: #000000 ;
+$background-light: #ffffff ;
+
+
+$text-color-dark: #ffffff;
+$text-color-light: #000000 ;
+
+
+$focus-color-dark: 1px solid #ffffff ;
+$focus-color-light: 1px solid #000000 ;
+
+$focus-background-dark:  #ffffff ;
+$focus-background-light: #000000 ;
+ 
+$focus-text-color-dark:  #000000 ;
+$focus-text-color-light: #ffffff ;
+
+$hover-text-color-dark:  #464646 ;
+$hover-text-color-light: #EDEDED ;
+
+$img-url-selector-dark:  url(../images/selectDark.svg) ;
+$img-url-selector-light: url(../images/selectWhite.svg) ;
+
+:root {
+    // background
+    --background-dark: #{$background-dark} ;
+    --background-light: #{$background-light} ;
+    --background-default: var(#{--background-light}) ;
+    // body background
+    --body-background-dark: #{$body-background-dark} ;
+    --body-background-light: #{$body-background-light} ;
+    --body-background-default: var(#{--body-background-light}) ;
+    // border background
+    --border-background-dark: #{$border-background-dark} ;
+    --border-background-light: #{$border-background-light} ;
+    --border-background-default: var(#{--border-background-light}) ;
+    // disabled border background
+    --disabled-border-background-dark: #{$disabled-border-background-dark} ;
+    --disabled-border-background-light: #{$disabled-border-background-light} ;
+    --disabled-border-background-default: var(#{--disabled-border-background-light}) ;
+    // text color
+    --text-color-dark: #{$text-color-dark} ;
+    --text-color-light: #{$text-color-light} ;
+    --text-color-default: var(#{--text-color-light}) ;
+    // hover text color
+    --hover-text-color-dark: #{$hover-text-color-dark} ;
+    --hover-text-color-light: #{$hover-text-color-light} ;
+    --hover-text-color-default: var(#{--hover-text-color-light}) ;
+    //focus color
+    --focus-color-dark: #{$focus-color-dark} ;
+    --focus-color-light: #{$focus-color-light} ;
+    --focus-color-default: var(#{--focus-color-light}) ;
+    //focus background-color 
+    --focus-background-dark: #{$focus-background-dark} ;
+    --focus-background-light: #{$focus-background-light} ;
+    --focus-background-default: var(#{--focus-background-light}) ;
+    //focus border-color
+    --focus-border-background-dark: #{$focus-border-background-dark} ;
+    --focus-border-background-light: #{$focus-border-background-light} ;
+    --focus-border-background-default: var(#{--focus-border-background-light}) ;
+    //focus text-color 
+    --focus-text-color-dark: #{$focus-text-color-dark} ;
+    --focus-text-color-light: #{$focus-text-color-light} ;
+    --focus-text-color-default: var(#{--focus-text-color-light}) ;
+    //img-url-selector 
+    --img-url-selector-dark: #{$img-url-selector-dark} ;
+    --img-url-selector-light: #{$img-url-selector-light} ;
+    --img-url-selector-default: var(#{--img-url-selector-light}) ;
+}
